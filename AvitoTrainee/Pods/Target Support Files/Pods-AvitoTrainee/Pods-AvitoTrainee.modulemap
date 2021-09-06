@@ -1,0 +1,6 @@
+framework module Pods_AvitoTrainee {
+  umbrella header "Pods-AvitoTrainee-umbrella.h"
+
+  export *
+  module * { export * }
+}
