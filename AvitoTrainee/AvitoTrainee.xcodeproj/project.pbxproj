@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4E4228E126E5F235003A4310 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4228E026E5F235003A4310 /* Data.swift */; };
 		4E4228E426E5F468003A4310 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4228E326E5F468003A4310 /* NetworkManager.swift */; };
+		4E4228F326E69FD8003A4310 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4228F226E69FD8003A4310 /* ExtensionViewController.swift */; };
+		4E4228F626E6A072003A4310 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4228F526E6A072003A4310 /* EmployeeCell.swift */; };
+		4E4228F926E6A0E1003A4310 /* NetworkManagerDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4228F826E6A0E1003A4310 /* NetworkManagerDescription.swift */; };
+		4E4228FC26E6A118003A4310 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4228FB26E6A118003A4310 /* NetworkError.swift */; };
 		4E712AA726E4A9A600FDF5D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E712AA626E4A9A600FDF5D3 /* AppDelegate.swift */; };
 		4E712AA926E4A9A600FDF5D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E712AA826E4A9A600FDF5D3 /* SceneDelegate.swift */; };
 		4E712AAB26E4A9A600FDF5D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E712AAA26E4A9A600FDF5D3 /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 		002D5A15C5A932EA17F77F22 /* Pods-AvitoTrainee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvitoTrainee.debug.xcconfig"; path = "Target Support Files/Pods-AvitoTrainee/Pods-AvitoTrainee.debug.xcconfig"; sourceTree = "<group>"; };
 		4E4228E026E5F235003A4310 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4E4228E326E5F468003A4310 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4E4228F226E69FD8003A4310 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		4E4228F526E6A072003A4310 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		4E4228F826E6A0E1003A4310 /* NetworkManagerDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerDescription.swift; sourceTree = "<group>"; };
+		4E4228FB26E6A118003A4310 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4E712AA326E4A9A600FDF5D3 /* AvitoTrainee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoTrainee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E712AA626E4A9A600FDF5D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E712AA826E4A9A600FDF5D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +63,55 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4E4228FE26E6A16B003A4310 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E712AAA26E4A9A600FDF5D3 /* ViewController.swift */,
+				4E4228F526E6A072003A4310 /* EmployeeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E4228FF26E6A179003A4310 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4E4228F226E69FD8003A4310 /* ExtensionViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4E42290026E6A19A003A4310 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4E4228E326E5F468003A4310 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4E42290126E6A1A6003A4310 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				4E4228E026E5F235003A4310 /* Data.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		4E42290226E6A1B5003A4310 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4E4228F826E6A0E1003A4310 /* NetworkManagerDescription.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4E42290326E6A1C0003A4310 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4E4228FB26E6A118003A4310 /* NetworkError.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		4E712A9A26E4A9A600FDF5D3 = {
 			isa = PBXGroup;
 			children = (
@@ -76,15 +133,18 @@
 		4E712AA526E4A9A600FDF5D3 /* AvitoTrainee */ = {
 			isa = PBXGroup;
 			children = (
+				4E42290326E6A1C0003A4310 /* Enums */,
+				4E42290226E6A1B5003A4310 /* Protocols */,
+				4E42290126E6A1A6003A4310 /* Structs */,
+				4E42290026E6A19A003A4310 /* Manager */,
+				4E4228FF26E6A179003A4310 /* Extension */,
+				4E4228FE26E6A16B003A4310 /* View */,
 				4E712AA626E4A9A600FDF5D3 /* AppDelegate.swift */,
 				4E712AA826E4A9A600FDF5D3 /* SceneDelegate.swift */,
-				4E712AAA26E4A9A600FDF5D3 /* ViewController.swift */,
 				4E712AAC26E4A9A600FDF5D3 /* Main.storyboard */,
 				4E712AAF26E4A9A900FDF5D3 /* Assets.xcassets */,
 				4E712AB126E4A9A900FDF5D3 /* LaunchScreen.storyboard */,
 				4E712AB426E4A9A900FDF5D3 /* Info.plist */,
-				4E4228E026E5F235003A4310 /* Data.swift */,
-				4E4228E326E5F468003A4310 /* NetworkManager.swift */,
 			);
 			path = AvitoTrainee;
 			sourceTree = "<group>";
@@ -213,7 +273,11 @@
 			files = (
 				4E712AAB26E4A9A600FDF5D3 /* ViewController.swift in Sources */,
 				4E712AA726E4A9A600FDF5D3 /* AppDelegate.swift in Sources */,
+				4E4228F626E6A072003A4310 /* EmployeeCell.swift in Sources */,
+				4E4228F926E6A0E1003A4310 /* NetworkManagerDescription.swift in Sources */,
+				4E4228F326E69FD8003A4310 /* ExtensionViewController.swift in Sources */,
 				4E4228E426E5F468003A4310 /* NetworkManager.swift in Sources */,
+				4E4228FC26E6A118003A4310 /* NetworkError.swift in Sources */,
 				4E712AA926E4A9A600FDF5D3 /* SceneDelegate.swift in Sources */,
 				4E4228E126E5F235003A4310 /* Data.swift in Sources */,
 			);
