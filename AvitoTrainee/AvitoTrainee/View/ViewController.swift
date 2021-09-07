@@ -53,6 +53,9 @@ class ViewController: UIViewController{
             
             switch result {
             case .success(let employeess):
+                
+                // расставление имен в алфавитном порядке
+                
                 self?.employees.append(employeess[2])
                 self?.employees.append(employeess[5])
                 self?.employees.append(employeess[1])
@@ -60,6 +63,10 @@ class ViewController: UIViewController{
                 self?.employees.append(employeess[3])
                 self?.employees.append(employeess[6])
                 self?.employees.append(employeess[4])
+                
+                // добавляю еще один пустой скилл для людей, у которых всего 2 скилла
+                // чтобы не было index out of range при обращении
+                
                 for i in 1...6 where i != 5 {
                     self?.employees[i].skills.append("")
                 }

@@ -30,8 +30,12 @@ final class EmployeeCell: UITableViewCell{
     private func setup(){
         nameLabel.font = .systemFont(ofSize: 28, weight: .semibold)
         selectionStyle = .none
-        [nameLabel, phone_numberLabel, firstSkillLabel, secondSkillLabel, thirdSkillLabel].forEach { contentView.addSubview($0) }
+        [nameLabel, phone_numberLabel, firstSkillLabel, secondSkillLabel, thirdSkillLabel].forEach { contentView.addSubview($0)
+        }
     }
+    
+    
+    // верстка ячейки при помощи PinLayout
     
     override func layoutSubviews() {
         super.layoutSubviews()
